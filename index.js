@@ -10,6 +10,7 @@ const wall = document.querySelector("#wall");
 const door = document.querySelector("#door");
 const windowss = document.querySelector("#window");
 const selectColor = document.querySelector("#select-color");
+const resetBtn = document.querySelector("#reset-btn");
 
 let saveColor;
 
@@ -71,3 +72,11 @@ roof.addEventListener("click", roofColor);
 wall.addEventListener("click", wallColor);
 door.addEventListener("click", doorColor);
 windowss.addEventListener("click", windowssColor);
+
+const resetColor = () => {
+  roof.style.backgroundColor = "#fff";
+  wall.style.backgroundColor = "#fff";
+  door.style.backgroundColor = "#fff";
+  windowss.style.backgroundColor = "#fff";
+};
+resetBtn.addEventListener("click", resetColor);
