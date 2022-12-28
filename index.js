@@ -21,7 +21,7 @@ const changeCCC = () => {
   saveColor = `${colorg.value}`;
   colort.style.border = `15px solid ${saveColor}`;
 };
-colorg.addEventListener("change", changeCCC);
+colorg.addEventListener("input", changeCCC);
 
 const roofColor = () => {
   roof.style.backgroundColor = saveColor;
