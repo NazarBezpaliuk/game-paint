@@ -1,59 +1,27 @@
-const brown = document.querySelector("#brown");
-const green = document.querySelector("#green");
-const black = document.querySelector("#black");
-const blue = document.querySelector("#blue");
-const yellow = document.querySelector("#yellow");
-const red = document.querySelector("#red");
-const gray = document.querySelector("#gray");
+// const brown = document.querySelector("#brown");
+// const green = document.querySelector("#green");
+// const black = document.querySelector("#black");
+// const blue = document.querySelector("#blue");
+// const yellow = document.querySelector("#yellow");
+// const red = document.querySelector("#red");
+// const gray = document.querySelector("#gray");
 const roof = document.querySelector("#roof");
 const wall = document.querySelector("#wall");
 const door = document.querySelector("#door");
 const windowss = document.querySelector("#window");
-const selectColor = document.querySelector("#select-color");
 const resetBtn = document.querySelector("#reset-btn");
+const colorg = document.querySelector("#tyui");
+const ccc = document.querySelector("#tyu");
+const colort = document.querySelector("#colort");
 
-let saveColor;
+let saveColor = colorg.value;
+colort.style.border = `15px solid ${saveColor}`;
 
-const brownColor = () => {
-  saveColor = "#301d0c";
-  selectColor.style.backgroundColor = saveColor;
+const changeCCC = () => {
+  saveColor = `${colorg.value}`;
+  colort.style.border = `15px solid ${saveColor}`;
 };
-const greenColor = () => {
-  saveColor = "#6df54e";
-  selectColor.style.backgroundColor = saveColor;
-};
-const blackColor = () => {
-  saveColor = "#000";
-  selectColor.style.backgroundColor = saveColor;
-};
-const blueColor = () => {
-  saveColor = "#a9edf3";
-  selectColor.style.backgroundColor = saveColor;
-};
-const yellowColor = () => {
-  saveColor = "#f4e363";
-  selectColor.style.backgroundColor = saveColor;
-};
-const redColor = () => {
-  saveColor = "#f63636";
-  selectColor.style.backgroundColor = saveColor;
-};
-const grayColor = () => {
-  saveColor = "#575656";
-  selectColor.style.backgroundColor = saveColor;
-};
-const cleanColor = () => {
-  saveColor = "#fff";
-  selectColor.style.backgroundColor = saveColor;
-};
-brown.addEventListener("click", brownColor);
-green.addEventListener("click", greenColor);
-black.addEventListener("click", blackColor);
-blue.addEventListener("click", blueColor);
-yellow.addEventListener("click", yellowColor);
-red.addEventListener("click", redColor);
-gray.addEventListener("click", grayColor);
-selectColor.addEventListener("click", cleanColor);
+colorg.addEventListener("change", changeCCC);
 
 const roofColor = () => {
   roof.style.backgroundColor = saveColor;

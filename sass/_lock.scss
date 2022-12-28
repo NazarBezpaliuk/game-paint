@@ -43,14 +43,15 @@
   }
 }
 .locker_submit {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 50px;
-  width: 120px;
+  padding: 10px 30px;
   background-color: darkgreen;
   transform: translateX(-50%);
   border: 2px solid black;
+  text-align: center;
   outline: none;
   border-radius: 10px;
   font-size: 30px;

@@ -5,25 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/main.css" />
-    <title>Document</title>
+    <title>Paint</title>
+    <link rel="shortcut icon" type="image/svg" href="./image/fffff.png" />
   </head>
   <body>
-    <div id="select-color"></div>
+    <form class="fffff">
+      <input class="inputcolor" name="tyui" type="color" id="tyui" />
+      <label id="colort" class="lablecolor" for="tyui"></label>
+    </form>
+
     <div id="roof" class="roof"></div>
     <div id="wall" class="wall"></div>
     <div id="window" class="window"></div>
     <div id="door" class="door"></div>
-    <ul class="color-bar">
-      <li id="brown" class="color-bar__item"></li>
-      <li id="blue" class="color-bar__item"></li>
-      <li id="gray" class="color-bar__item"></li>
-      <li id="red" class="color-bar__item"></li>
-      <li id="black" class="color-bar__item"></li>
-      <li id="green" class="color-bar__item"></li>
-      <li id="yellow" class="color-bar__item"></li>
-    </ul>
     <button id="reset-btn">RESET</button>
-    <div id="wraper" class="wraper">
+    <!-- <div id="wraper" class="wraper">
       <div class="zamok">
         <div class="ae">
           <div class="aaa">
@@ -41,11 +37,9 @@
           placeholder="Password"
           name="password"
         />
-        <button id="locker_submit" class="locker_submit" type="button">
-          GO
-        </button>
+        <div id="locker_submit" class="locker_submit" type="button">GO</div>
       </form>
-    </div>
+    </div> -->
   </body>
   <script src="./index.js"></script>
   <script src="./lock.js"></script>
